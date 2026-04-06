@@ -5,7 +5,7 @@
 ### HSR: 4.1.0 OS/CN
 ### ZZZ: 2.7.0 OS/CN
 
-#### **: Starting from release 0.3.12 using DXMT 0.74, you need to update to Sequoia or later. Sonoma is getting old and is lacking technical features to improve the translation.
+#### **: Starting from release 0.3.12 using DXMT 0.74, you need to update to Sequoia or later. Sonoma is getting old and is lacking technical features to improve the translation. We might support Sonoma again when the issue is fixed.
 
 ## For Linux users
 [Anime Games Launcher](https://github.com/an-anime-team/anime-games-launcher) is a universal linux launcher for anime games
