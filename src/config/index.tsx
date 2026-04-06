@@ -154,7 +154,7 @@ export async function createConfiguration({
                           {locale.get("SETTING_YAAGL_VERSION")}
                         </FormLabel>
                         <Text userSelect={"none"} onClick={onClickVersion}>
-                          {CURRENT_YAAGL_VERSION}
+                          {CURRENT_YAAGL_VERSION} (Update fork test applied)
                         </Text>
                       </FormControl>
                     </VStack>
