@@ -14,7 +14,7 @@ import {
 } from "./utils";
 import { CommonUpdateProgram } from "./common-update-ui";
 
-const owner = "3shain";
+const owner = "ScathachSkadi";
 const repo = "yet-another-anime-game-launcher";
 
 export async function createUpdater(deps: { github: Github; aria2: Aria2 }) {
