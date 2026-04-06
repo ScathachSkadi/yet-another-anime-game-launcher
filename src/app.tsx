@@ -35,7 +35,6 @@ import {
   ModalBody,
   ModalFooter,
   Button,
-  Checkbox,
   Text,
 } from "@hope-ui/solid";
 
@@ -155,7 +154,6 @@ export async function createApp() {
       initialUpdateCheck.latest == false &&
         ignoredVersion !== initialUpdateCheck.version
     );
-    const [ignoreUpdate, setIgnoreUpdate] = createSignal(false);
 
     showPromptSignal = setShowPrompt;
     setPendingUpdateInfoSignal = setPendingUpdateInfo;
@@ -176,27 +174,26 @@ export async function createApp() {
                     pendingUpdateInfo().description!,
                   ])}
                 </Text>
-                <Checkbox
-                  onChange={(e: any) =>
-                    setIgnoreUpdate((e.target as HTMLInputElement).checked)
-                  }
-                >
-                  {locale.get("UPDATE_PROMPT_IGNORE")}
-                </Checkbox>
               </ModalBody>
               <ModalFooter>
                 <Button
                   variant="ghost"
+                  colorScheme="danger"
                   mr="$3"
                   onClick={async () => {
-                    if (ignoreUpdate()) {
-                      await setKey(
-                        "ignore_launcher_update",
-                        pendingUpdateInfo().version!
-                      );
-                    }
+                    await setKey(
+                      "ignore_launcher_update",
+                      pendingUpdateInfo().version!
+                    );
                     setShowPrompt(false);
                   }}
+                >
+                  {locale.get("UPDATE_PROMPT_IGNORE")}
+                </Button>
+                <Button
+                  variant="ghost"
+                  mr="$3"
+                  onClick={() => setShowPrompt(false)}
                 >
                   {locale.get("SETTING_CANCEL")}
                 </Button>
@@ -215,7 +212,7 @@ export async function createApp() {
                     setShowPrompt(false);
                   }}
                 >
-                  {locale.get("UPDATE")}
+                  {locale.get("UPDATE_LAUNCHER")}
                 </Button>
               </ModalFooter>
             </ModalContent>

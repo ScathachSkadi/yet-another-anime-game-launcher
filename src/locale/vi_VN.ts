@@ -120,7 +120,8 @@ export const vi_VN: typeof zh_CN = {
 
   SETTING_TURN_ON_STEAM_PATCH: en.SETTING_TURN_ON_STEAM_PATCH, // TODO: Translate
 
-  UPDATE_PROMPT_IGNORE: "Bỏ qua bản cập nhật này",
-  SETTING_CHECK_UPDATE: "Kiểm tra cập nhật",
+  UPDATE_PROMPT_IGNORE: "Bỏ qua cập nhật",
+  SETTING_CHECK_UPDATE: "Kiểm tra cập nhật YAAGL",
   ALREADY_LATEST_VERSION: "Bạn đang sử dụng phiên bản mới nhất.",
+  UPDATE_LAUNCHER: "Cập nhật Launcher",
 };
